@@ -20,7 +20,7 @@ RNA was purified from approximately n = 100 hearts per replicate per timepoint a
 sample was split equally to produce a total RNA library (Illumina RiboZero Gold Library 
 Kit) and a small RNA library (QIAseq miRNA Library Kit). All libraries for both RNA classes
 were multiplexed into two single RNA-Seq libraries and sequenced on an Illumina HiSeq 2500.
-The Total RNA sequencing library was sequenced paired-end over 8 lanes and the Small RNA 
+The Total RNA sequencing library was sequenced paired-end over eight lanes and the Small RNA 
 sequencing library was sequenced single-end over two lanes.
 
 Data is publicly available at https://b2b.hci.utah.edu/gnomex/gnomexFlex.jsp?requestNumber=468R
