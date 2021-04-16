@@ -20,16 +20,17 @@ RNA was purified from approximately n = 100 hearts per replicate per timepoint a
 sample was split equally to produce a total RNA library (Illumina RiboZero Gold Library 
 Kit) and a small RNA library (QIAseq miRNA Library Kit). All libraries for both RNA classes
 were multiplexed into two single RNA-Seq libraries and sequenced on an Illumina HiSeq 2500.
-The Total RNA sequencing library was sequenced paired-end over 8 lanes and the Small RNA 
+The Total RNA sequencing library was sequenced paired-end over eight lanes and the Small RNA 
 sequencing library was sequenced single-end over two lanes.
 
 Data is publicly available at https://b2b.hci.utah.edu/gnomex/gnomexFlex.jsp?requestNumber=468R
 
 ### Computational Methods
 
+##### *RiboZero Data*
+
 Transcript abundances were quantified using kallisto (*Bray et al. 2016*) and genome build 
-GRCz10 release 89 (may2017.archive.ensembl.org). Estimated counts for all transcripts 
-per gene were summed to give a gene-level abundance estimation (*Soneson et al. 2015*).  
+GRCz11 release 99 (jan2020.archive.ensembl.org). The R package Tximport was used to give a bias-corrected gene-level abundance estimation (*Soneson et al. 2015*).  
 Summed estimated counts were rounded to the nearest integer in order to run DESeq2 (*Love et al. 2014*) using a negative binomial LRT model correcting for replicate 
 (counts~ replicate + timepoint). This model tests in an anova-like way whether one timepoint
 differs from any other timepoint across the series.
