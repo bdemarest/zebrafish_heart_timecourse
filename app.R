@@ -11,10 +11,10 @@ library(gridExtra)
 library(DT)
 library(viridis)
 
-library(reactlog)
+# library(reactlog) # For debugging. Disable for production.
 
 # tell shiny to log all reactivity
-reactlog_enable()
+# reactlog_enable()
 
 # To do 27 Oct 2020.
 # XXX 1. Fix miRNA heatmap plot display.
