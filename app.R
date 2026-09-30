@@ -10,6 +10,7 @@ library(ggplot2)
 library(gridExtra)
 library(DT)
 library(viridis)
+library(markdown) # Adding this explicitly so that shinyapps.io includes during deployment.
 
 # library(reactlog) # For debugging. Disable for production.
 
